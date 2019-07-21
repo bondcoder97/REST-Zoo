@@ -46,7 +46,7 @@ app.post("/", async (req, res)=>{
      res.end();
     }
     catch(err){
-       console.log();
+       console.log(err);
     }
 });
 
@@ -75,7 +75,6 @@ app.put("/", async (req, res)=>{
 
 app.delete("/", async (req, res)=>{
     let {name} = req.body;
-    console.log(name);
     
     try{
      let animalArray = await getFileData("data.js");
