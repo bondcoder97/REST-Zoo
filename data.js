@@ -1,0 +1,1 @@
+[{"name":"Lion","type":"Cat","age":2},{"name":"Wolf","type":"Dog","age":3},{"name":"Cat","type":"Cat","age":1},{"name":"Hamster","type":"Mouse","age":2},{"name":"Panther","type":"Cat","age":5},{"name":"Tiger","type":"Cat","age":"7"}]

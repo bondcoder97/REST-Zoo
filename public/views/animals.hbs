@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animals</title>
+    <style>
+         body{
+             padding: 0%;
+             margin: 0%;
+         }
+          .animalBlock{
+             width: 25%;
+             float:left;
+             color: white;
+          }
+          .animalBlock h2, .animalBlock p{
+              padding-left: 37%;
+          }
+          .animalBlock:nth-child(1n){
+            background-color: rgb(122, 122, 224);
+          }
+        .animalBlock:nth-child(2n){
+            background-color: rgb(68, 68, 148);
+          }
+
+        .animalBlock:nth-child(3n){
+            background-color: rgb(57, 57, 168);
+          }
+        .animalBlock:nth-child(4n){
+            background-color: rgb(27, 27, 175);
+          }
+    </style>
+   
+</head>
+<body>
+
+    {{#each data}}
+    <div class="animalBlock">
+    <h2> {{this.name}} </h2>
+    <p> Type : <strong> {{this.type}} </strong> </p>
+     <p> Age : <strong> {{this.age}} </strong> </p>
+  
+    </div>
+     {{/each}}
+    
+</body>
+</html>
